@@ -10,6 +10,24 @@
     --nav-height: 80px;
     --container-width: 1200px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scarcity-bar {
+    background: linear-gradient(90deg, #ff5f56, #ffbd2e);
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.scarcity-bar strong {
+    text-decoration: underline;
 }
 
 * {
@@ -80,14 +98,18 @@ p {
 /* Navbar */
 #navbar {
     height: var(--nav-height);
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: 40px; /* Adjust based on scarcity bar height */
     width: 100%;
     z-index: 1000;
     background: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
     transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    #navbar { top: 35px; }
 }
 
 .nav-content {
