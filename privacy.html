@@ -7,57 +7,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .legal-content { padding: 120px 0 80px; max-width: 800px; margin: 0 auto; }
+        .legal-content { padding: 120px 0 80px; max-width: 900px; margin: 0 auto; cursor: default !important; }
+        .legal-content * { cursor: default !important; }
         h1 { margin-bottom: 2rem; color: var(--secondary); }
-        h2 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; }
-        p { margin-bottom: 1.2rem; line-height: 1.8; }
-        ul { margin-bottom: 1.2rem; padding-left: 1.5rem; color: var(--text-dim); }
-        li { margin-bottom: 0.5rem; }
+        h2 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; color: var(--text-main); }
+        p, li { margin-bottom: 1.2rem; line-height: 1.8; color: var(--text-dim); }
+        .back-nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.8); backdrop-filter: blur(20px); z-index: 100; border-bottom: 1px solid var(--glass-border); }
     </style>
 </head>
 <body>
     <div class="glow-bg"></div>
-    <nav id="navbar">
-        <div class="container nav-content">
-            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
-                <span class="logo-icon"></span>
-                <span class="logo-text">NucleoX</span>
-            </a>
-            <a href="index.html" class="btn-secondary">Voltar</a>
+    <div class="back-nav">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 80px;">
+            <div class="logo"><span class="logo-icon"></span><span class="logo-text">NucleoX</span></div>
+            <a href="index.html" class="btn-secondary">Voltar ao Início</a>
         </div>
-    </nav>
+    </div>
 
     <div class="container">
         <article class="legal-content">
-            <h1>Política de Privacidade</h1>
-            <p>Sua privacidade é importante para nós. Esta política explica como coletamos e usamos seus dados em conformidade com a LGPD.</p>
+            <h1>Política de Privacidade (LGPD)</h1>
+            <p>Na NucleoX, privacidade e segurança de dados são pilares fundamentais. Esta política detalha como tratamos seus dados pessoais em total conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
             
-            <h2>1. Coleta de Dados</h2>
-            <p>Coletamos informações que você nos fornece diretamente através do formulário de contato, como nome e e-mail.</p>
-            
-            <h2>2. Uso das Informações</h2>
-            <p>Utilizamos seus dados exclusivamente para:</p>
+            <h2>1. Dados Coletados e Finalidade</h2>
+            <p>Coletamos dados através de nossos formulários para finalidades específicas:</p>
             <ul>
-                <li>Responder a suas solicitações de contato.</li>
-                <li>Enviar informações sobre nossos serviços (caso autorizado).</li>
-                <li>Melhorar a experiência do usuário no site.</li>
+                <li><strong>Identificação:</strong> Nome e e-mail corporativo para contato comercial e diagnósticos.</li>
+                <li><strong>Interesse:</strong> Informações sobre seus desafios de negócio para personalizar nossas soluções.</li>
+                <li><strong>Navegação:</strong> Cookies analíticos (Google Analytics) para melhorar a experiência do usuário.</li>
             </ul>
             
-            <h2>3. Segurança</h2>
-            <p>Implementamos medidas de segurança técnicas e administrativas para proteger seus dados contra acesso não autorizado ou perda.</p>
+            <h2>2. Base Legal para o Tratamento</h2>
+            <p>Tratamos seus dados baseados no seu <strong>Consentimento</strong> (Art. 7º, I da LGPD) ou para o <strong>Legítimo Interesse</strong> (Art. 7º, IX da LGPD) no desenvolvimento de nossas atividades comerciais.</p>
             
-            <h2>4. Seus Direitos</h2>
-            <p>Você tem o direito de solicitar o acesso, correção ou exclusão de seus dados pessoais a qualquer momento através do nosso e-mail de contato.</p>
+            <h2>3. Seus Direitos</h2>
+            <p>Como titular dos dados, você possui direitos que podem ser exercidos a qualquer momento:</p>
+            <ul>
+                <li>Confirmação da existência de tratamento e acesso aos dados.</li>
+                <li>Correção de dados incompletos ou inexatos.</li>
+                <li>Anonimização ou bloqueio de dados desnecessários.</li>
+                <li>Revogação do consentimento e exclusão dos dados.</li>
+            </ul>
             
-            <h2>5. Cookies</h2>
-            <p>Utilizamos cookies para análise de tráfego e melhoria de performance através do Google Analytics.</p>
+            <h2>4. Segurança e Retenção</h2>
+            <p>Utilizamos criptografia SSL e firewalls de última geração. Seus dados são retidos apenas pelo tempo necessário para cumprir as finalidades descritas ou conforme exigência legal.</p>
+            
+            <h2>5. Contato (DPO)</h2>
+            <p>Para exercer seus direitos ou tirar dúvidas, entre em contato com nosso Encarregado de Dados (DPO) através do e-mail: <strong>dpo@nucleox.com</strong>.</p>
         </article>
     </div>
 
-    <footer style="padding: 40px 0;">
+    <footer style="padding: 40px 0; border-top: 1px solid var(--glass-border);">
         <div class="container footer-bottom">
             <p>&copy; 2026 NucleoX. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

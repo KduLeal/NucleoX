@@ -7,50 +7,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .legal-content { padding: 120px 0 80px; max-width: 800px; margin: 0 auto; }
+        .legal-content { padding: 120px 0 80px; max-width: 900px; margin: 0 auto; cursor: default !important; }
+        .legal-content * { cursor: default !important; }
         h1 { margin-bottom: 2rem; color: var(--primary); }
-        h2 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; }
-        p { margin-bottom: 1.2rem; line-height: 1.8; }
+        h2 { margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; color: var(--text-main); }
+        p, li { margin-bottom: 1.2rem; line-height: 1.8; color: var(--text-dim); }
+        .back-nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.8); backdrop-filter: blur(20px); z-index: 100; border-bottom: 1px solid var(--glass-border); }
     </style>
 </head>
 <body>
     <div class="glow-bg"></div>
-    <nav id="navbar">
-        <div class="container nav-content">
-            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
-                <span class="logo-icon"></span>
-                <span class="logo-text">NucleoX</span>
-            </a>
-            <a href="index.html" class="btn-secondary">Voltar</a>
+    <div class="back-nav">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 80px;">
+            <div class="logo"><span class="logo-icon"></span><span class="logo-text">NucleoX</span></div>
+            <a href="index.html" class="btn-secondary">Voltar ao Início</a>
         </div>
-    </nav>
+    </div>
 
     <div class="container">
         <article class="legal-content">
-            <h1>Termos de Uso</h1>
-            <p>Última atualização: 21 de Abril de 2026</p>
+            <h1>Termos e Condições de Uso</h1>
+            <p>Bem-vindo à NucleoX. Estes termos regem o uso do nosso site e serviços. Ao acessar nossa plataforma, você concorda com os termos aqui descritos.</p>
             
-            <h2>1. Aceitação dos Termos</h2>
-            <p>Ao acessar e utilizar o site da NucleoX, você concorda em cumprir e estar vinculado aos seguintes termos e condições de uso.</p>
+            <h2>1. Objeto</h2>
+            <p>Este site tem como objetivo fornecer informações sobre as soluções de tecnologia, inteligência artificial e alavancagem de negócios oferecidas pela NucleoX.</p>
             
-            <h2>2. Uso dos Serviços</h2>
-            <p>Os serviços e informações fornecidos neste site são destinados a empresas e profissionais interessados em soluções de tecnologia e marketing digital. É proibido o uso do site para fins ilícitos ou que possam danificar a infraestrutura da NucleoX.</p>
+            <h2>2. Propriedade Intelectual</h2>
+            <p>Todo o conteúdo, incluindo textos, gráficos, logotipos, ícones, imagens, clipes de áudio e software, é de propriedade da NucleoX ou de seus fornecedores de conteúdo e é protegido pelas leis brasileiras e internacionais de direitos autorais.</p>
             
-            <h2>3. Propriedade Intelectual</h2>
-            <p>Todo o conteúdo, design, logotipos e códigos presentes neste site são de propriedade exclusiva da NucleoX, protegidos por leis de direitos autorais e propriedade intelectual.</p>
+            <h2>3. Uso Permitido</h2>
+            <p>O usuário compromete-se a utilizar o site de forma ética e legal, sendo proibido:</p>
+            <ul>
+                <li>Utilizar o site para fins fraudulentos ou ilícitos.</li>
+                <li>Tentar interferir na segurança ou integridade da nossa infraestrutura.</li>
+                <li>Coletar dados de outros usuários de forma automatizada (scraping).</li>
+            </ul>
             
             <h2>4. Limitação de Responsabilidade</h2>
-            <p>A NucleoX não se responsabiliza por danos diretos ou indiretos resultantes do uso ou da incapacidade de usar este site ou seus serviços.</p>
+            <p>A NucleoX se esforça para manter as informações precisas e atualizadas, porém não garante a ausência de erros técnicos ou omissões. O uso das informações é por conta e risco do usuário.</p>
             
-            <h2>5. Alterações nos Termos</h2>
-            <p>Reservamo-nos o direito de modificar estes termos a qualquer momento, sem aviso prévio. Recomendamos a consulta regular desta página.</p>
+            <h2>5. Foro de Eleição</h2>
+            <p>Para dirimir quaisquer controvérsias oriundas deste termo, as partes elegem o foro da comarca de São Paulo/SP, com renúncia a qualquer outro, por mais privilegiado que seja.</p>
         </article>
     </div>
 
-    <footer style="padding: 40px 0;">
+    <footer style="padding: 40px 0; border-top: 1px solid var(--glass-border);">
         <div class="container footer-bottom">
             <p>&copy; 2026 NucleoX. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
