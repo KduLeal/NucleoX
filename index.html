@@ -25,6 +25,9 @@
     <meta property="og:title" content="NucleoX | Alavancas de Crescimento Exponencial">
     <meta property="og:description" content="O ecossistema inteligente para empresas que buscam o próximo nível.">
     <meta property="og:image" content="hero-visual.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="hero-visual.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,12 +56,12 @@
                 <span class="logo-icon"></span>
                 <span class="logo-text">NucleoX</span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#levers">Alavancas</a></li>
                 <li><a href="#methodology">Metodologia</a></li>
                 <li><a href="#contact" class="btn-primary">Quero um Diagnóstico</a></li>
             </ul>
-            <div class="menu-toggle">
+            <div class="menu-toggle" id="menuToggle">
                 <i data-lucide="menu"></i>
             </div>
         </div>
@@ -159,7 +162,7 @@
                     </div>
                 </div>
                 <div class="contact-form-container animate-on-scroll">
-                    <form action="https://formspree.io/f/YOUR_ID" method="POST" class="contact-form">
+                    <form action="https://formspree.io/f/YOUR_ID" method="POST" class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name">Nome</label>
                             <input type="text" id="name" name="name" placeholder="Seu nome" required>
@@ -173,6 +176,7 @@
                             <textarea id="message" name="message" rows="4" placeholder="Ex: Baixo ROI..." required></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-full">Solicitar Diagnóstico Gratuito</button>
+                        <div id="formFeedback" style="display:none; margin-top:1rem; color:var(--secondary); font-weight:600;">Obrigado! Entraremos em contato em breve.</div>
                     </form>
                 </div>
             </div>
